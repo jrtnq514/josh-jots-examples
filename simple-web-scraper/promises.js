@@ -9,6 +9,7 @@ got(URL_TO_SCRAPE)
     // Load the page into cheerio for parsing
     const $ = cheerio.load(response.body);
 
+    // Array to store the titles
     let titles = [];
 
     $('a h3').each((index, element) => {
